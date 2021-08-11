@@ -4,6 +4,13 @@
   height: 100%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 337px;
+  grid-template-rows: repeat(2, 300px);
+  place-items: center;
+  place-content: center;
+
   .first-section {
     margin: 0 auto;
     margin-top: 45px;

@@ -1,0 +1,103 @@
+@media screen and (min-width: 1440px) {
+  .body {
+    width: 1440px;
+    background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+    background-position: 0% 0%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+  }
+
+  .grid {
+    width: 1300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "description stars"
+      "reviews reviews";
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .first-section {
+    grid-area: description;
+    text-align: left;
+
+    &__header {
+      margin: 30px 0 0 0;
+      font-size: 58px;
+      margin-right: 100px;
+    }
+
+    &__description {
+      margin: 15px 70px 30px 0;
+      font-size: 18px;
+    }
+  }
+
+  .second-section {
+    grid-area: stars;
+  }
+
+  .box {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+
+    &__one {
+      margin: 50px 0 20px -50px;
+    }
+
+    &__two {
+      margin-left: 0;
+    }
+
+    &__three {
+      margin-left: 50px;
+    }
+
+    &__star {
+      margin: 0 5px;
+      width: 18px;
+      height: 18px;
+
+      &--first {
+        margin-left: 30px;
+      }
+    }
+
+    &__rated {
+      margin-left: 25px;
+      font-size: 16px;
+    }
+  }
+
+  .third-section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    grid-area: reviews;
+    margin: 0;
+  }
+
+  .feedback {
+    &__box-two {
+      margin-top: 40px;
+    }
+
+    &__box-three {
+      margin-top: 80px;
+    }
+
+    &__paragraph {
+      font-size: 15px;
+    }
+  }
+}

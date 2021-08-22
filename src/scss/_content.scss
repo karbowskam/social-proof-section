@@ -2,6 +2,10 @@
   background: $white;
   min-width: 375px;
   height: 100%;
+  background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+  background-position: 50% 0%, 50% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll;
 }
 
 .grid {
@@ -10,28 +14,28 @@
   grid-template-rows: repeat(2, 300px);
   place-items: center;
   place-content: center;
+}
 
-  .first-section {
-    margin: 0 auto;
-    margin-top: 45px;
-    text-align: center;
+.first-section {
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: center;
 
-    &__header {
-      margin: 0 30px;
-      font-family: "bold-font", Arial, Helvetica, sans-serif;
-      font-size: 33px;
-      color: $dark-magenta;
-      line-height: 1;
-      letter-spacing: -1.5px;
-    }
+  &__header {
+    margin: 0 30px;
+    font-family: "bold-font", Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    color: $dark-magenta;
+    line-height: 1;
+    letter-spacing: -1.5px;
+  }
 
-    &__description {
-      margin-top: 25px;
-      color: $dark-magenta;
-      font-family: "regular-font", Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-    }
+  &__description {
+    margin-top: 25px;
+    color: $dark-magenta;
+    font-family: "regular-font", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
   }
 }
 

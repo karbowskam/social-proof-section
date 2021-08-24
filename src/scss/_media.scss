@@ -1,10 +1,8 @@
 @media screen and (min-width: 1440px) {
   .body {
-    width: 1440px;
+    min-width: 1440px;
     background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
-    background-position: 0% 0%, 100% 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed;
+    background-position: 0% 0%, 100% -50%;
   }
 
   .grid {
